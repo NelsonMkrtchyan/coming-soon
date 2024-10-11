@@ -22,15 +22,15 @@ export const ThemeSwitcher = () => {
 
   return (
     <div className="">
-        <button
-        className="text-slate-500 p-2 bg rounded-full border-slate-50	"
-        onClick={() => { currentTheme === "light" ?
-            setTheme("dark") :
-            setTheme("light")
-        }}
-        >
-        { currentTheme === "light" ? "DARK" : "LIGHT" }
-        </button>
+        {/*<button*/}
+        {/*className="text-slate-500 p-2 bg rounded-full border-slate-50	"*/}
+        {/*onClick={() => { currentTheme === "light" ?*/}
+        {/*    setTheme("dark") :*/}
+        {/*    setTheme("light")*/}
+        {/*}}*/}
+        {/*>*/}
+        {/*{ currentTheme === "light" ? "DARK" : "LIGHT" }*/}
+        {/*</button>*/}
         {/* {currentTheme === "light" ? (
             <MoonIcon
                 className="size-5 cursor-pointer text-slate-700"
