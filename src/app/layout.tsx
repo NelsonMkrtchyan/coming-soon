@@ -4,14 +4,14 @@ import { ThemeProvider } from './theme-provider'
 
 import Head from 'next/head'
 
-const inter = Inter({ 
+const inter = Inter({
   weight: ['100', '200', '300', '600', '400', '700', '900'],
-  subsets: ['latin'] 
+  subsets: ['latin']
 })
 
 export const metadata = {
-  title: "Home - Comming soon Template",
-  description: 'This is a simple coming soon template built with NextJS and TailwindCSS. It is a lightweight and responsive template that can be used for various projects that require a "coming soon" page.',
+  title: "CardioLab",
+  description: 'The Art of Heart Care.',
 }
 
 export default function RootLayout({
@@ -21,15 +21,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />        
-      </Head>
-      <body className={ `${inter.className} bg-gray-200	min-h-screen dark:bg-[#0d1117] `}
-      >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>          
-          <main className='main'>{children}</main>
-        </ThemeProvider>          
-      </body>
+    <Head>
+        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48"/>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+        <link rel="shortcut icon" href="/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="manifest" href="/site.webmanifest"/>
+    </Head>
+    <body className={`${inter.className} bg-gray-200	min-h-screen dark:bg-[#0d1117] `}
+    >
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={true}>
+        <main className='main'>{children}</main>
+    </ThemeProvider>
+    </body>
     </html>
   )
 }

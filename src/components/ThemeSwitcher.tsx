@@ -19,10 +19,10 @@ export const ThemeSwitcher = () => {
   }
 
   const currentTheme = theme === "system" ? systemTheme : theme
-  
+
   return (
     <div className="">
-        <button 
+        <button
         className="text-slate-500 p-2 bg rounded-full border-slate-50	"
         onClick={() => { currentTheme === "light" ?
             setTheme("dark") :
